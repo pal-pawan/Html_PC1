@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page using HTML and CSS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: poppins;
+        }
+        .menu{
+            width: 1170px;
+            margin: auto;
+        }
+        .header-area{
+            background: url(../Assets/sajad-nori-suuKCJBdQ_Q-unsplash.jpg);
+            background-size: 1920px 1080px;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .nav-area{
+            float: right;
+            list-style-type: disc;
+            margin-top: 30px;
+        }
+        .nav-area li{
+            display: inline-block;
+        }
+        .nav-area li a{
+            color: #fff;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 25px;
+            text-decoration: underline;
+            padding: 5px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .nav-area li a:hover{
+            background: #fff;
+            color: #000;
+            border-radius: 15px;
+        }
+        .logo{
+            float: left;
+            padding: 5px 20px;
+        }
+        .logo img{
+            width: 10%;
+            padding: 15px 0;
+            border-radius: 50%;
+        }
+        .banner-text{
+            position: absolute;
+            width: 580px;
+            height: 300px;
+            margin: 18% 30%;
+            text-align: center;
+        }
+        .banner-text h1{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 60px;
+        }
+        .banner-text h1 span{
+            color: #00ffff;
+        }
+        .banner-text p{
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+        .banner-text a{
+            border: 1px solid #000;
+            border-radius: 25px;
+            color: #fff;
+            background-color:rgba(0,0,0,0.3);
+            gap: 25px;
+            margin-top: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px 25px;
+            transition: color 300ms;
+        }
+        .banner-text a:hover{
+            background: #fff;
+            color: #000;
+            transform: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-area">
+        <div class="menu">
+            <div class="logo">
+                <img src="../Assets/logo1.jpg" alt="check your connection.">
+            </div>
+            <ul class="nav-area">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Portfolio</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+                </ul>
+
+        </div>
+        <div class="banner-text">
+            <h1>We are <span>CREATIVE</span></h1>
+            <p>We always create for others with love from the bottom of our hearts. And we love doing this!
+            </p> <br> <br>
+                <a href="file:///D:/Pawan%20Pal/Classwork/Login.html" target="_blank">Login</a>
+                <a href="file:///D:/Pawan%20Pal/Classwork/form.html" target="_blank">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
