@@ -6,6 +6,7 @@ h1{
     align-items: center;
     color: white;
     background: grey;
+    border-radius: 3rem;
 }
 p{
     font-family: 'Bruno Ace SC', cursive;
@@ -18,7 +19,7 @@ p{
     min-height: 500px;
     max-width: 900px;
     background:rgba(36, 32, 32, 0.324);
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 20px 40px;
 }
 div{
@@ -26,4 +27,5 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 40px;
 }
