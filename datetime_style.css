@@ -1,24 +1,29 @@
 h1{
     font-family: 'Bruno Ace SC', cursive;
-    font-size: 14px;
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    background: grey;
 }
 p{
     font-family: 'Bruno Ace SC', cursive;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 700;
-    font-style: italic;
     color: greenyellow;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgba(255, 254, 254, 0.2);
+    min-height: 500px;
+    max-width: 900px;
+    background:rgba(36, 32, 32, 0.324);
     border-radius: 20px;
+    padding: 20px 40px;
 }
-body{
+div{
     background-color: rgba(1, 1, 1, 0.500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
