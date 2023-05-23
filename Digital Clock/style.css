@@ -1,4 +1,21 @@
-.display_time{
+.clock{
     font-size: 24px;
     color: #333;
-  }
+    display: inline-block;
+    font-family: 'Bruno Ace SC', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hour, #minute, #second{
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 35px;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20%;
+    position: relative;
+    background: linear-gradient(357deg, rgb(210 54 54), #6cf1f1);
+}
