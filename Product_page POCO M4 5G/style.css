@@ -204,6 +204,7 @@ div.option-details{
 div.option-details:hover{
     border: solid #388e3c;
     cursor: pointer;
+    color: #fff;
     border-radius: 0.5rem;
 }
 span.product-tag{
@@ -289,13 +290,13 @@ p:hover{
 button{
     border-radius: 2px;
     color: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
     cursor: pointer;
     display: flex;
     justify-content: center;
 }
 button.add-to-cart-button{
-        animation: bounce 2s ease 0.5s 1 normal none;
+    animation: bounce 2s ease 0.5s 1 normal none;
     background: #ff9f00;
     width: 45%;
     padding: 18px 8px;
@@ -303,9 +304,9 @@ button.add-to-cart-button{
 }
 
 button.buy-now-button{
-        animation: bounce 2s ease 0.5s 1 normal none;
+    animation: bounce 2s ease 0.5s 1 normal none;
     background: #fb641b;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
     float: right;
     padding: 18px 8px;
     width: 45%;
