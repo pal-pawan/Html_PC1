@@ -66,6 +66,3 @@ const gameContainer = document.querySelector(".container"),
         }, 2500)
     });
 });
-
-
-
