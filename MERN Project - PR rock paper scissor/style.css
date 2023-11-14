@@ -20,7 +20,10 @@ body {
 }
 .result_images{
     display: flex;
+    justify-content: center;
     column-gap: 7rem;
+    margin: 20px;
+    padding: 20px;
 }
 .start .user_result{
     transform-origin: left;
@@ -67,7 +70,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 2.5rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .contianer.start .option_images{
     pointer-events: none;
@@ -93,4 +96,27 @@ body {
     font-size: 1.235rem;
     margin-top: 1rem;
     pointer-events: none;
+}
+
+.score_board{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #de9c0d;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+.score_board span{
+    text-align: center;
+    margin: 30px;
+    max-height: 50px;
+    border-radius: 20%;
+
+}
+.user_score{
+    color:#7CB342
+}
+.cpu_score{
+    color:#E53935
 }

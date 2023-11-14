@@ -2,8 +2,13 @@ const gameContainer = document.querySelector(".container"),
     userResult = document.querySelector(".user_result img"),
     cpuResult = document.querySelector(".cpu_result img"),
     result = document.querySelector(".result"),
+    score_board_title = document.querySelector(".score_board_title"),
+    score_separator = document.querySelector(".score_separator"),
+    user_score = document.querySelector(".user_score"),
+    cpu_score = document.querySelector(".cpu_score"),
     optionImages = document.querySelectorAll(".option_image");
-    
+    uscore = 0;
+    cscore = 0;
     
     //Loop through each option image element
     optionImages.forEach((image, index) => {
@@ -14,7 +19,7 @@ const gameContainer = document.querySelector(".container"),
             userResult.src = cpuResult.src = "rock.jpg";
             result.textContent = "Wait...";
 
-        //Loop through each option image again
+        //Loop through each option image again to remove the active class from image not clicked
         optionImages.forEach((image2, index2) => {
             index !== index2 && image2.classList.remove("active");
         });
@@ -61,8 +66,18 @@ const gameContainer = document.querySelector(".container"),
             // Look up the outcome value based on the user and CPU options
             let outComeValue = outcomes[userValue + cpuValue];
 
+            if(outComeValue=='User ') uscore++;
+            if(outComeValue=="CPU ") cscore++;
+            console.log(uscore);
+            console.log(cscore);
+
             // Display the results
-            result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Won!!`;
+            result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Won!`;
+            //Initial ScoreBoard
+    score_separator.textContent = ":";
+    user_score.textContent = `User - ${uscore} `;
+    cpu_score.textContent = `Computer - ${cscore} `;
         }, 2500)
+        
     });
 });
